@@ -1,0 +1,15 @@
+# this snippet will rename all files in the exported Qualtrics submitted file directory with the base ResponseID and .jpg extension
+
+import glob, os
+
+currentdir = os.getcwd()
+subfolder = input("you are currently in " + currentdir + " - please enter subfolder name:")
+dirfolder = currentdir + "/" + subfolder
+
+for filename in glob.iglob(os.path.join(subfolder, '*.*')):
+    base = os.path.basename(filename)
+    dir = os.path.dirname(filename)
+    newpath = dir + "/" + base[0:17] + '.jpg'
+    print(newpath)
+    os.rename(filename, newpath)
+
