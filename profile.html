@@ -1,0 +1,97 @@
+<style type="text/css">.var{
+   font-weight: bold;
+   width: 150px !important;
+} 
+.topinput{
+   width: 300px !important;
+} 
+.botinput{
+   width: 600px !important;
+} 
+td {
+font-family:arial;
+padding: 10px ;
+text-align: left;
+}
+#photodiv{
+position: absolute;
+right: 30px;
+top: 30px;
+  border-style: solid;
+  border-width: 5px;
+}
+#photo{
+width:200px;
+}
+</style>
+<div id="photodiv"><img id = "photo" src=http://umich.edu/~embafolder/2020Profiles/{{PhotoURL}}></div>
+<table>
+	<tbody>
+		<tr>
+			<td class="var">Preferred Name:&nbsp;</td>
+			<td class="topinput">{{PreferredName}}</td>
+		</tr>
+		<tr>
+			<td class="var">Formal Name:&nbsp;</td>
+			<td class="topinput">{{FormalName}}</td>
+		</tr>
+		<tr>
+			<td class="var">Job Title:</td>
+			<td class="topinput">{{JobTitle}}
+			</td>
+		</tr>
+		<tr>
+			<td class="var">Company:&nbsp;</td>
+			<td class="topinput">{{Company}}
+			</td>
+		</tr>
+		<tr>
+			<td class="var">Umich e-mail:&nbsp;</td>
+			<td class="topinput">{{Email}}</td>
+		</tr>
+		<tr>
+			<td class="var">E-mail:&nbsp;</td>
+			<td class="topinput">{{WorkEmail}}</td>
+		</tr>
+		<tr>
+			<td class="var">Business Location:&nbsp;</td>
+			<td class="topinput">{{BusinessAddress}}</td>
+		</tr>
+		<tr>
+			<td class="var">Company Website:</td>
+			<td class="botinput">{{CompanyWebsite}}</td>
+		</tr>
+		<tr>
+			<td class="var">Company Description:</td>
+			<td class="botinput">{{CompanyDescription}}</td>
+		</tr>
+		<tr>
+			<td class="var">Primary Responsibilities:</td>
+			<td class="botinput">{{PrimaryResp}}</td>
+		</tr>
+		<tr>
+			<td class="var">Previous Experience:</td>
+			<td class="botinput">{{PreviousExp}}</td>
+		</tr>
+		<tr>
+			<td class="var">Professional Interests:</td>
+			<td class="botinput">{{ProfessionalInterests}}</td>
+		</tr>
+		<tr>
+			<td class="var">Education:</td>
+			<td class="botinput">{{Education}}</td>
+		</tr>
+		<tr>
+			<td class="var">Home City:</td>
+			<td class="botinput">{{HomeCity}}</td>
+		</tr>
+		<tr>
+			<td class="var">Preferred Phone:</td>
+			<td class="botinput">{{PreferredPhone}}</td>
+		</tr>
+		<tr>
+			<td class="var">Leisure Activities:</td>
+			<td class="botinput">{{LeisureActivities}}</td>
+		</tr>
+	</tbody>
+</table>
